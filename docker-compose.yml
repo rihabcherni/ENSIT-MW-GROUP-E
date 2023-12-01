@@ -1,11 +1,35 @@
-version: '3'
+version: '3.7'
+
 services:
-  web:
+
+  angular:
+    image: angular
+    container_name: angular
     build:
       context: .
       dockerfile: Dockerfile
-    ports: 
-      - "8080/80"
-    volumes:
-      - ./:/app
-      
+    ports:
+      - 8080:8080
+
+
+
+
+
+
+
+
+
+
+# version: '3'
+
+# services:
+#   app:
+#     build:
+#       context : .
+#       dockerfile: Dockerfile
+#     ports:
+#       - 4200:80
+#     volumes:
+#       - "./:/app"
+#       - "/app/node_modules"
+
